@@ -1,8 +1,8 @@
 import Data.Monoid
 
+import Graphics.Proc
 import Data.Tuple
 import Gen
-import Draw
 import DrawPipes
 
 import Pipes

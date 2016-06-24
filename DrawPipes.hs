@@ -3,11 +3,13 @@ module DrawPipes(
 ) where
 
 import Gen
-import Draw
+import Graphics.Proc
 import Pipes
 import qualified Pipes.Prelude as P
 import Control.Monad.IO.Class
 import Data.Default
+
+type TimeInterval = Float
 
 runGen :: Draw -> (s -> Draw) -> Gen s -> IO ()
 runGen initScene draw gen = runProc $ def 
